@@ -1,0 +1,48 @@
+panic error time:2024-08-09 17:37:57
+runtime error: invalid memory address or nil pointer dereference
+stacktrace from panic:goroutine 18 [running]:
+runtime/debug.Stack()
+	D:/go sdk/go/src/runtime/debug/stack.go:24 +0x5e
+vote-gin/pkg/logger.Recover.func1()
+	D:/GitHubwarehouse/vote-gin/pkg/logger/logger.go:139 +0x28a
+panic({0x110d340?, 0x1675d80?})
+	D:/go sdk/go/src/runtime/panic.go:914 +0x21f
+github.com/gin-contrib/sessions.(*session).Session(0xc0002ac0f0)
+	D:/goproject/pkg/mod/github.com/gin-contrib/sessions@v1.0.1/sessions.go:132 +0x2a
+github.com/gin-contrib/sessions.(*session).Set(0xc0002ac0f0, {0x10da6e0, 0xc0002b4590}, {0x10da860?, 0x1647090})
+	D:/goproject/pkg/mod/github.com/gin-contrib/sessions@v1.0.1/sessions.go:88 +0x35
+vote-gin/controllers.UserController.Login({}, 0xc0002bc198?)
+	D:/GitHubwarehouse/vote-gin/controllers/user.go:71 +0x2b3
+github.com/gin-gonic/gin.(*Context).Next(0xc0002bc100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 +0x2b
+vote-gin/router.Router.Sessions.func1(0xc0002bc100)
+	D:/goproject/pkg/mod/github.com/gin-contrib/sessions@v1.0.1/sessions.go:54 +0x17d
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+vote-gin/pkg/logger.Recover(0xc0002bc100)
+	D:/GitHubwarehouse/vote-gin/pkg/logger/logger.go:149 +0x62
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0002bc100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xe6
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc0002bc100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0002bc100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xe6
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000230b60, 0xc0002bc100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x892
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000230b60, {0x12a2f00?, 0xc0002e2000}, 0xc0002bc000)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0x1dd
+net/http.serverHandler.ServeHTTP({0x12a17c8?}, {0x12a2f00?, 0xc0002e2000?}, 0x6?)
+	D:/go sdk/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000096000, {0x12a3f80, 0xc000253f50})
+	D:/go sdk/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	D:/go sdk/go/src/net/http/server.go:3086 +0x5cb
+

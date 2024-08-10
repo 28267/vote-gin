@@ -1,0 +1,133 @@
+panic error time:2024-08-08 15:29:23
+runtime error: integer divide by zero
+stacktrace from panic:goroutine 6 [running]:
+runtime/debug.Stack()
+	D:/go sdk/go/src/runtime/debug/stack.go:24 +0x5e
+github.com/28267/goDemo/gin-demo01/pkg/logger.Recover.func1()
+	D:/GitHubwarehouse/goDemo/gin-demo01/pkg/logger/logger.go:139 +0x28a
+panic({0xfe1160?, 0x139d6f0?})
+	D:/go sdk/go/src/runtime/panic.go:914 +0x21f
+github.com/28267/goDemo/gin-demo01/controllers.UserController.GetUserInfo({}, 0xc000096100)
+	D:/GitHubwarehouse/goDemo/gin-demo01/controllers/user.go:23 +0x18a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/28267/goDemo/gin-demo01/pkg/logger.Recover(0xc000096100)
+	D:/GitHubwarehouse/goDemo/gin-demo01/pkg/logger/logger.go:149 +0x62
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000096100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xe6
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc000096100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000096100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xe6
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000053d40, 0xc000096100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x892
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000053d40, {0x110e0f0?, 0xc0000b8000}, 0xc000096000)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0x1dd
+net/http.serverHandler.ServeHTTP({0xc000088030?}, {0x110e0f0?, 0xc0000b8000?}, 0x6?)
+	D:/go sdk/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00015a240, {0x110ead0, 0xc00018ffb0})
+	D:/go sdk/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	D:/go sdk/go/src/net/http/server.go:3086 +0x5cb
+
+panic error time:2024-08-08 15:29:25
+runtime error: integer divide by zero
+stacktrace from panic:goroutine 6 [running]:
+runtime/debug.Stack()
+	D:/go sdk/go/src/runtime/debug/stack.go:24 +0x5e
+github.com/28267/goDemo/gin-demo01/pkg/logger.Recover.func1()
+	D:/GitHubwarehouse/goDemo/gin-demo01/pkg/logger/logger.go:139 +0x28a
+panic({0xfe1160?, 0x139d6f0?})
+	D:/go sdk/go/src/runtime/panic.go:914 +0x21f
+github.com/28267/goDemo/gin-demo01/controllers.UserController.GetUserInfo({}, 0xc000096100)
+	D:/GitHubwarehouse/goDemo/gin-demo01/controllers/user.go:23 +0x18a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/28267/goDemo/gin-demo01/pkg/logger.Recover(0xc000096100)
+	D:/GitHubwarehouse/goDemo/gin-demo01/pkg/logger/logger.go:149 +0x62
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000096100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xe6
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc000096100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000096100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xe6
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000053d40, 0xc000096100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x892
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000053d40, {0x110e0f0?, 0xc0000b80e0}, 0xc000096200)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0x1dd
+net/http.serverHandler.ServeHTTP({0xc000088030?}, {0x110e0f0?, 0xc0000b80e0?}, 0x6?)
+	D:/go sdk/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00015a240, {0x110ead0, 0xc00018ffb0})
+	D:/go sdk/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	D:/go sdk/go/src/net/http/server.go:3086 +0x5cb
+
+panic error time:2024-08-08 15:30:34
+runtime error: integer divide by zero
+stacktrace from panic:goroutine 6 [running]:
+runtime/debug.Stack()
+	D:/go sdk/go/src/runtime/debug/stack.go:24 +0x5e
+github.com/28267/goDemo/gin-demo01/pkg/logger.Recover.func1()
+	D:/GitHubwarehouse/goDemo/gin-demo01/pkg/logger/logger.go:139 +0x28a
+panic({0x601160?, 0x9bd6f0?})
+	D:/go sdk/go/src/runtime/panic.go:914 +0x21f
+github.com/28267/goDemo/gin-demo01/controllers.UserController.GetUserInfo({}, 0xc00009f558?)
+	D:/GitHubwarehouse/goDemo/gin-demo01/controllers/user.go:15 +0x9
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/28267/goDemo/gin-demo01/pkg/logger.Recover(0xc000096100)
+	D:/GitHubwarehouse/goDemo/gin-demo01/pkg/logger/logger.go:149 +0x62
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000096100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xe6
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc000096100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000096100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 +0xe6
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc00019c000, 0xc000096100)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 +0x892
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc00019c000, {0x72e070?, 0xc0000b8000}, 0xc000096000)
+	D:/goproject/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 +0x1dd
+net/http.serverHandler.ServeHTTP({0xc000088030?}, {0x72e070?, 0xc0000b8000?}, 0x6?)
+	D:/go sdk/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00015a240, {0x72ea50, 0xc00018ffb0})
+	D:/go sdk/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	D:/go sdk/go/src/net/http/server.go:3086 +0x5cb
+
+{"level":"error","msg":"","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-08-08 16:06:59"}
+{"level":"error","msg":"","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-08-08 17:27:33"}
+{"level":"error","msg":"","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-08-08 17:38:38"}
+{"level":"error","msg":"","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-08-08 17:41:27"}
+{"level":"error","msg":"","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-08-08 17:43:38"}
+{"level":"error","msg":"","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-08-08 17:44:31"}
+{"level":"error","msg":"","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-08-08 17:48:05"}
+{"level":"error","msg":"","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-08-08 18:05:00"}
+{"level":"error","msg":"","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-08-08 18:05:03"}
+{"level":"error","msg":"","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-08-08 18:05:05"}
+{"level":"error","msg":"","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-08-08 18:20:07"}
+{"level":"error","msg":"","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-08-08 18:23:18"}
+{"level":"error","msg":"","mysql connect error":"sql: unknown driver \"mysql\" (forgotten import?)","time":"2024-08-08 18:26:43"}
